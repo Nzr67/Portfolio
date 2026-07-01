@@ -1,27 +1,27 @@
-import { Github, Instagram, Mail, User, Zap } from 'lucide-react';
+import {Mail, User, Zap, } from 'lucide-react';
 
 import {
-  asanaIcon,
-  athonLogo,
-  athonLogoLight,
   client_1,
   client_2,
   client_3,
   client_4,
+  databaseIcon,
   discord,
   dribble,
   dribbleIcon,
   dribbleLight,
   facebook,
   figmaIcon,
+  fiverrIcon,
   framerIcon,
+  githubIcon,
   graphicDesignIcon,
   graphicDesignIconLight,
   instagramIcon,
   instagramIconLight,
   linkedInIcon,
   linkedInIconLight,
-  notionIcon,
+  nextJsIcon,
   pinterest,
   pixelworksLogo,
   pixelworksLogoLight,
@@ -29,11 +29,15 @@ import {
   project_2,
   project_3,
   project_4,
+  pythonIcon,
   seoOptIcon,
   seoOptIconLight,
   slackIcon,
   snapchat,
   spotify,
+  tailwindIcon,
+  typeScriptIcon,
+  viteIcon,
   vortexLogo,
   vortexLogoLight,
   webDesignIcon,
@@ -84,30 +88,20 @@ export const socialLists: socialListsTypes[] = [
   {
     id: 1,
     title: 'Instagram',
-    icon: <Instagram size={22} />,
-    link: 'https://www.instagram.com/',
+    icon: instagramIcon,
+    link: 'https://www.instagram.com/a_nazar31?igsh=MXdzNXp1d2V1NW5rdg%3D%3D',
   },
   {
     id: 2,
     title: 'Github',
-    icon: <Github size={22} />,
-    link: 'https://github.com/psparwez/portfolio',
+    icon: githubIcon,
+    link: 'https://github.com/Nzr67',
   },
   {
     id: 3,
-    title: 'Twitter',
-    icon: (
-      <svg
-        xmlns='http://www.w3.org/2000/svg'
-        viewBox='0 0 24 24'
-        fill='currentColor'
-        width='22'
-        height='22'
-      >
-        <path d='M10.4883 14.651L15.25 21H22.25L14.3917 10.5223L20.9308 3H18.2808L13.1643 8.88578L8.75 3H1.75L9.26086 13.0145L2.31915 21H4.96917L10.4883 14.651ZM16.25 19L5.75 5H7.75L18.25 19H16.25Z'></path>
-      </svg>
-    ),
-    link: 'https://www.twitter.com/psparwez',
+    title: 'Fiverr',
+    icon: fiverrIcon,
+    link: 'https://www.fiverr.com/nazar_abd',
   },
 ];
 
@@ -159,120 +153,144 @@ export const socialBrands: socialBrandsTypes[] = [
 export const counterLists: counterListsType[] = [
   {
     id: 1,
-    title: 'Happy Clients',
-    value: 45,
+    title: 'Compromises on Speed',
+    value: 0,
   },
   {
     id: 2,
-    title: 'Year of Experience',
+    title: 'Years in Tech & Operations',
     value: 2,
   },
   {
     id: 3,
-    title: 'Completed Tasks',
-    value: 40,
+    title: 'Clean Code Architecture',
+    value: '100%',
   },
   {
     id: 4,
-    title: 'Awards Received',
-    value: 6,
+    title: 'Core Creative Services',
+    value: 4,
   },
 ];
 
 export const myExperience: myExperienceTypes[] = [
   {
     id: 1,
-    year: '2023 - Present',
-    title: 'Product Designer',
-    company: 'Vortex',
+    year: 'May 2024 - Present',
+    title: 'Front Desk & Operations Officer',
+    company: 'Cerridwen Spiritual Healing Academy',
     label: 'Tech Firm',
     description:
-      'Headed product design initiatives, defined design strategy, and ensured alignment with business objectives for market-leading products.',
+      'Managed front-of-house operations, client relations, and administrative systems. I optimized internal communication workflows to eliminate bottlenecks, developing strong user-empathy and problem-solving skills that now guide how I design user-centric software interfaces.',
     link: 'vortex.com',
     logo: vortexLogo,
     logoLight: vortexLogoLight,
   },
   {
     id: 2,
-    year: '2022 - 2023',
-    title: 'Senior UI/UX Designer',
-    company: 'PixelWorks',
-    label: 'Design Studio',
+    year: 'Jan 2026 - Present',
+    title: 'Information Technology Student',
+    company: 'Institute of Technology, University of Moratuwa',
+    label: 'Education',
     description:
-      'Provided leadership in UI/UX design, mentored junior designers, and collaborated with cross-functional teams for product excellence.',
+      'Applying rigorous IT coursework in data structures and database fundamentals to hands-on development. I build responsive frontend interfaces using React and Vite with a focus on efficient state management, while leveraging Python to write automation scripts and handle backend data logic.',
     link: 'pixelworks.io',
     logo: pixelworksLogo,
     logoLight: pixelworksLogoLight,
   },
   {
     id: 3,
-    year: '2020 - 2022',
-    title: 'UI/UX Designer',
-    company: 'Athon',
+    year: 'Early 2026 - Present',
+    title: 'Freelance Web Developer',
+    company: 'Independent / Freelance',
     label: 'Tech Start-up',
     description:
-      'Led UI/UX design projects from concept to delivery, conducted user testing, and iterated designs for optimal user experience.',
-    link: 'athon.com',
-    logo: athonLogo,
-    logoLight: athonLogoLight,
+      'Developing custom, high-performance web applications and digital solutions for small businesses and independent professionals. I manage the full project lifecycle from initial requirements gathering and UI design to building scalable frontend architectures with React/Next.js and handling production deployment.',
+    link: 'fiverr.com',
+    logo: fiverrIcon,
+    logoLight: fiverrIcon,
   },
 ];
 
 export const myStack: myStackTypes[] = [
   {
     id: 1,
+    category: 'Frontend Development',
+    title: 'React & Next.js',
+    description: 'Building dynamic, responsive user interfaces with modern frontend frameworks and libraries',
+    logo: nextJsIcon,
+    lightLogo: nextJsIcon,
+    link: 'https://www.nextjs.org',
+  },
+  {
+    id: 2,
+    category: 'Frontend Development',
     title: 'Figma',
-    description: 'Interface Design Tool',
+    description: 'Designing intuitive and visually appealing user interfaces with collaborative design tools',
     logo: figmaIcon,
     lightLogo: figmaIcon,
     link: 'https://www.figma.com',
   },
   {
-    id: 2,
-    title: 'Notion',
-    description: 'Productivity Tool',
-    logo: notionIcon,
-    lightLogo: notionIcon,
-    link: 'https://www.notion.so',
-  },
-  {
     id: 3,
-    title: 'Webflow',
-    description: 'No Code Design Tool',
-    logo: webflowIcon,
-    lightLogo: webflowIcon,
-    link: 'https://www.webflow.com',
+    category: 'Frontend Development',
+    title: 'JavaScript & TypeScript',
+    description: 'Writing clean, efficient, and maintainable code with strong typing and modern JavaScript features',
+    logo: typeScriptIcon,
+    lightLogo: typeScriptIcon,
+    link: 'https://www.typescriptlang.org',
   },
   {
     id: 4,
-    title: 'Framer',
-    description: 'No Code Design Tool',
-    logo: framerIcon,
-    lightLogo: framerIcon,
-    link: 'https://www.framer.com',
+    category: 'Frontend Development',
+    title: 'SCSS & Tailwind CSS',
+    description: 'Creating visually appealing and responsive designs with modern CSS frameworks and pre-processors',
+    logo: tailwindIcon,
+    lightLogo: tailwindIcon,
+    link: 'https://www.tailwindcss.com',
   },
   {
     id: 5,
-    title: 'Slack',
-    description: 'Productivity Tool',
-    logo: slackIcon,
-    lightLogo: slackIcon,
-    link: 'https://slack.com',
+    category: 'Frontend Development',
+    title: 'Vite',
+    description: 'Utilizing ultra-fast development server tools for seamless frontend bundling and optimization',
+    logo: viteIcon,
+    lightLogo: viteIcon,
+    link: 'https://www.vitejs.dev',
   },
   {
     id: 6,
-    title: 'Asana',
-    description: 'Productivity Tool',
-    logo: asanaIcon,
-    lightLogo: asanaIcon,
-    link: 'https://www.asana.com',
+    category: 'Backend Development',
+    title: 'Python',
+    description: 'Writing efficient and scalable code for backend development and automation',
+    logo: pythonIcon,
+    lightLogo: pythonIcon,
+    link: 'https://www.python.org',
   },
+  {
+    id: 7,
+    category: 'Backend Development',
+    title: 'Databases & Systems',
+    description: 'Learning and implementing structural database principles, schema designs, and data integrations.',
+    logo: databaseIcon,
+    lightLogo: databaseIcon,
+    link: 'https://www.postgresql.org',
+  },
+  {
+    id: 8,
+    category: 'Tools',
+    title: 'Git & GitHub',
+    description: 'Version control and collaboration using Git and GitHub for efficient code management',
+    logo: githubIcon,
+    lightLogo: githubIcon,
+    link: 'https://www.github.com',
+  }
 ];
 
 export const myServices: myServicesTypes[] = [
   {
     id: 1,
-    title: 'Web Design',
+    title: 'UI/UX Design',
     description: 'Crafting visually captivating and user-friendly websites for online success.',
     icon: webDesignIcon,
     lightIcon: webDesignIconLight,
@@ -292,14 +310,6 @@ export const myServices: myServicesTypes[] = [
     description: 'Creating visually stunning designs that captivate and engage audiences.',
     icon: graphicDesignIcon,
     lightIcon: graphicDesignIconLight,
-    link: '/services',
-  },
-  {
-    id: 4,
-    title: 'SEO Optimization',
-    description: 'Elevating online visibility and driving organic traffic through strategies.',
-    icon: seoOptIcon,
-    lightIcon: seoOptIconLight,
     link: '/services',
   },
 ];
@@ -387,118 +397,109 @@ export const myServicesPlans: myServicesPlansTypes[] = [
   {
     id: 1,
     service: 'Web Design',
-    price: '$50',
-    description: 'Crafting visually captivating and user-friendly websites for online success.',
-    completedWorks: '25+',
-    experience: '5+',
-    totalHoursWorked: '500 hours',
+    description: [
+      'UI/UX Wireframing',
+      'Mobile-Responsive Layouts',
+      'Typography & Color Systems',
+    ],
     icon: webDesignIcon,
     lightIcon: webDesignIconLight,
   },
   {
     id: 2,
-    service: 'Web Dev',
-    price: '$60',
-    description: 'Bringing ideas to life with robust and scalable web solutions.',
-    completedWorks: '30+',
-    experience: '6+',
-    totalHoursWorked: '420 hours',
+    service: 'Web Development',
+    description: [
+      'React & Next.js Framework Architecture',
+      'Tailwind CSS / SCSS Engineering',
+      'Production Deployment to Vercel',
+    ],
     icon: webDevIcon,
     lightIcon: webDevIconLight,
   },
   {
     id: 3,
     service: 'Graphic Design',
-    price: '$40',
-    description: 'Creating visually stunning designs that captivate and engage audiences.',
-    completedWorks: '40+',
-    experience: '8+',
-    totalHoursWorked: '328 hours',
+    description: [
+      'Social Media Brand Kits',
+      'Marketing Graphics & Digital Banners',
+      'Cohesive Visual Assets',
+    ],
     icon: graphicDesignIcon,
     lightIcon: graphicDesignIconLight,
   },
   {
-    id: 4,
-    service: 'SEO',
-    price: '$70',
-    description: 'Elevating online visibility and driving organic traffic through strategies.',
-    completedWorks: '20+',
-    experience: '4+',
-    totalHoursWorked: '223 hours',
+    id:4,
+    service: 'SEO Optimization',
+    description: [
+      'Keyword Research & Analysis',
+      'On-Page SEO Optimization',
+      'Performance Monitoring & Reporting',
+    ],
     icon: seoOptIcon,
     lightIcon: seoOptIconLight,
-  },
+  }
 ];
 
 export const faqData: FAQ[] = [
   {
     question: 'Can you work with clients remotely?',
     answer:
-      'Absolutely! I have experience working with clients from all around the world. Through effective communication channels such as email, video calls, and project management tools, I ensure seamless collaboration regardless of geographical location.',
+      'Yes, absolutely. I work with clients fully remotely. We can handle all communication, asset sharing, and design feedback through clear channels like email, WhatsApp, or brief virtual check-ins. This allows for a smooth, flexible workflow regardless of where you are located.',
   },
   {
     question: 'Will my website be mobile-friendly?',
     answer:
-      "Absolutely! Mobile responsiveness is a top priority in today's digital landscape. I design and develop websites that are fully responsive and adaptable to various devices and screen sizes. Your website will provide an optimal user experience whether accessed via desktops, smartphones, or tablets.",
+      "Yes, 100%. Every single website I design and build is mobile-first and fully responsive. It will look stunning and function perfectly across all devices, including smartphones, tablets, laptops, and large desktop screens",
   },
   {
     question: 'How long does it typically take to complete a project?',
     answer:
-      'The timeline for each project varies depending on its scope and complexity. Factors such as the number of pages, functionalities, and the client feedback process can impact the timeline. Upon discussing your project requirements, I will provide you with a realistic timeline and keep you updated throughout the process.',
+      "It generally takes between 2 to 4 weeks to deliver a complete, high-performance website. This timeline depends heavily on the project's complexity, the number of pages required, and how quickly you can provide text content, high-quality images, and design feedback.",
   },
   {
     question: 'Can you integrate third-party tools into my website?',
     answer:
-      'Yes, I have experience integrating various third-party tools, plugins, and platforms into websites. Whether you need to integrate e-commerce functionalities, social media integration, email marketing services, or anything else, I can recommend and help ensure smooth integration.',
+      'Yes. I can seamlessly embed the specific third-party widgets and platforms your business depends on. This includes setting up automated appointment scheduling calendars (like Calendly or Acuity), linking your social media feeds, embedding interactive maps, or integrating contact forms.',
   },
   {
     question: 'Do you offer website maintenance?',
     answer:
-      'Yes, I offer website maintenance services to ensure your website remains up to date, secure, and optimized. From performance updates to adding new features and content, I can provide ongoing support to keep your website running smoothly.',
+      'Yes, I handle live deployment, custom domain routing, and technical optimization to ensure your site launches perfectly. Once the site is live, I can provide ongoing maintenance, software optimization updates, or content revisions depending on your needs.',
   },
   {
     question: 'How do you handle website revisions?',
     answer:
-      'I value your input and collaboration throughout the design process. Upon completing an initial design, I encourage you to provide feedback. I incorporate your suggestions and revisions to ensure the final product aligns with your vision.',
-  },
-  {
-    question: 'Can you optimize my website?',
-    answer:
-      'Certainly! I incorporate search engine optimization (SEO) best practices into my development process. This includes using relevant keywords, optimizing meta tags, creating search-engine-friendly URLs, and ensuring your website has a solid foundation for better search engine visibility.',
+      'I value a collaborative design process. Before diving into code, I share design wireframes and structural mockups to ensure we align perfectly on the look and feel. Once development begins, I offer a set number of structured revision rounds at major milestones to fine-tune copy, imagery, and layout details.',
   },
   {
     question: 'What are your payment terms?',
     answer:
-      'Payment terms may vary depending on the project scope and duration. Generally, I request an initial deposit before commencing work.',
+      'For most freelance projects, I follow a standard 50/50 payment split. A 50% upfront deposit is required to secure the project timeline and initiate the initial wireframes and asset collection. The remaining 50% balance is settled once the website is fully built, approved, and ready to be launched live on your custom domain.',
   },
 ];
 
 export const followerData: FollowerData[] = [
   {
-    platform: 'twitter',
-    followers: '12.6K',
-    url: 'https://twitter.com/',
+    platform: 'X',
+    url: 'https://twitter.com/@abdul_nzr',
     icon: XLogo,
     lightIcon: XLogoLight,
   },
   {
     platform: 'Instagram',
-    followers: '8.3K',
-    url: 'https://www.instagram.com/',
+    url: 'https://www.instagram.com/a_nazar31?igsh=MXdzNXp1d2V1NW5rdg%3D%3D',
     icon: instagramIcon,
     lightIcon: instagramIconLight,
   },
   {
     platform: 'LinkedIn',
-    followers: '2.5K',
-    url: 'https://www.linkedin.com/',
+    url: 'www.linkedin.com/in/a-abdul-nazar',
     icon: linkedInIcon,
     lightIcon: linkedInIconLight,
   },
   {
     platform: 'Dribbble',
-    followers: '3.2K',
-    url: 'https://dribbble.com/',
+    url: 'https://dribbble.com/Nzr67/about?utm_source=Clipboard_%22clipboard_about%22&utm_campaign=%22Nzr67%22&utm_content=%22About%20Nzr67%22&utm_medium=Social_Share',
     icon: dribbleIcon,
     lightIcon: dribbleLight,
   },

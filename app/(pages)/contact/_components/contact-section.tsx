@@ -23,12 +23,6 @@ export default function ContactSection() {
             icon={<Mail size={18} />}
             title='Email Me'
           />
-          <Button
-            position='left'
-            className='w-full sm:w-min'
-            icon={<Calendar1 size={18} />}
-            title='Schedule Call'
-          />
         </div>
       </SectionHeading>
 

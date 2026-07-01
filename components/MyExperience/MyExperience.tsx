@@ -13,8 +13,8 @@ export default function MyExperience() {
         <SectionHeading
           darkImage={briefcaseIconley}
           lightImage={briefcaseIconLight}
-          title='My experience'
-          description='Navigating diverse environments with adaptability and expertise for holistic solutions.'
+          title='Experience & Projects'
+          description="A timeline of my professional background, academic journey, and the hands-on engineering projects I'm building to solve real-world problems."
         />
       </div>
       <ExperienceItem />

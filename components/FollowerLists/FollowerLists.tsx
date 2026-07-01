@@ -17,7 +17,7 @@ export default function FollowerLists({ followerData, rightArrow }: ContactFormP
     <motion.div
       initial='hidden'
       animate='visible'
-      variants={listVariants as any}
+      variants={listVariants}
       viewport={{ once: true }}
       className='flex flex-col gap-4'
     >
@@ -25,7 +25,7 @@ export default function FollowerLists({ followerData, rightArrow }: ContactFormP
         {followerData.map((data, index) => (
           <motion.li
             key={index}
-            variants={itemVariants as any}
+            variants={itemVariants}
           >
             <Link
               href={data.url}
@@ -44,7 +44,6 @@ export default function FollowerLists({ followerData, rightArrow }: ContactFormP
               </div>
               {/* Follower Info */}
               <div className='flex flex-col'>
-                <p className='text-light-gray-4 text-lg font-semibold'>{data.followers}</p>
                 <p className='text-light-gray-2 text-sm font-medium capitalize'>{data.platform}</p>
               </div>
               {/* Right Arrow */}

@@ -14,7 +14,10 @@ const AnimatedImageGrid: React.FC<AnimatedImageGridProps> = ({ image }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    setIsLoaded(true);
+    const animFrame = requestAnimationFrame(() => {
+      setIsLoaded(true);
+    });
+    return () => cancelAnimationFrame(animFrame);
   }, []);
 
   return (

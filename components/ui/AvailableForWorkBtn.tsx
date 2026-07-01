@@ -1,6 +1,6 @@
 import React from 'react';
 
-const greenColor: string = '#6dd33d';
+const Color: string = '#cc1313';
 
 export default function AvailableForWorkBtn() {
   return (
@@ -8,11 +8,11 @@ export default function AvailableForWorkBtn() {
       <div className='flex items-center justify-center gap-3'>
         <div
           className='relative flex h-2 w-2 items-center justify-center rounded-full'
-          style={{ backgroundColor: greenColor }}
+          style={{ backgroundColor: Color }}
         >
-          <div className='pointer-events-none absolute h-3 w-3 animate-ping rounded-full bg-green-400/30'></div>
+          <div className='pointer-events-none absolute h-3 w-3 animate-ping rounded-full bg-red-400/30'></div>
         </div>
-        <span className='text-light-gray-3 shrink-0 text-sm'>Available For Work</span>
+        <span className='text-light-gray-3 shrink-0 text-sm'>Availability For Work</span>
       </div>
     </button>
   );

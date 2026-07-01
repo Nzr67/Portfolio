@@ -10,7 +10,7 @@ export interface pagesListsType {
 export interface socialListsTypes {
   id: number;
   title: string;
-  icon: React.ReactNode;
+  icon: StaticImageData | string;
   link: string;
 }
 
@@ -25,7 +25,7 @@ export interface socialBrandsTypes {
 export interface counterListsType {
   id: number;
   title: string;
-  value: number;
+  value: number | string;
 }
 
 export interface myExperienceTypes {
@@ -42,6 +42,7 @@ export interface myExperienceTypes {
 
 export interface myStackTypes {
   id: number;
+  category: string;
   title: string;
   description: string;
   logo: string;
@@ -79,11 +80,7 @@ export interface testimonialsTypes {
 export interface myServicesPlansTypes {
   id: number;
   service: string;
-  price: string;
-  description: string;
-  completedWorks: string;
-  experience: string;
-  totalHoursWorked: string;
+  description: string[];
   icon: string;
   lightIcon: string;
 }
@@ -95,7 +92,6 @@ export type FAQ = {
 
 export interface FollowerData {
   platform: string;
-  followers: string;
   url: string;
   icon: string;
   lightIcon: string;

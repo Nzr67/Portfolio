@@ -1,5 +1,4 @@
 import handGif from '@assets/handGif.svg';
-import asanaIcon from '@assets/icons/asana.svg';
 import athonLogoLight from '@assets/icons/athon-light.svg';
 import athonLogo from '@assets/icons/athon-logo.svg';
 import briefcaseIconley from '@assets/icons/briefcase-icon.svg';
@@ -44,12 +43,12 @@ import dribbleIcon from '@assets/social-icons/dribble-icon.svg';
 import dribbleLight from '@assets/social-icons/dribble-light.svg';
 import facebook from '@assets/social-icons/facebook.svg';
 import figmaIcon from '@assets/social-icons/figma.svg';
+import fiverrIcon from '@assets/social-icons/fiverr.svg';
 import framerIcon from '@assets/social-icons/framer.svg';
 import instagramIcon from '@assets/social-icons/instagram.svg';
 import instagramIconLight from '@assets/social-icons/instagram-light.svg';
 import linkedInIcon from '@assets/social-icons/linkedin.svg';
 import linkedInIconLight from '@assets/social-icons/linkedin-light.svg';
-import notionIcon from '@assets/social-icons/notion.svg';
 import pinterest from '@assets/social-icons/pinterest.svg';
 import slackIcon from '@assets/social-icons/slack.svg';
 import snapchat from '@assets/social-icons/snapchat.svg';
@@ -60,19 +59,25 @@ import webflowIcon from '@assets/social-icons/webflow.svg';
 import XLogo from '@assets/social-icons/X-logo.svg';
 import XLogoLight from '@assets/social-icons/X-logo-light.svg';
 import youtube from '@assets/social-icons/youtube.svg';
+import databaseIcon from '@assets/tech-icons/database.svg';
+import githubIcon from '@assets/tech-icons/github.svg';
+import nextJsIcon from '@assets/tech-icons/nextJs.svg';
+import pythonIcon from '@assets/tech-icons/python.svg';
+import tailwindIcon from '@assets/tech-icons/tailwind.svg';
+import typeScriptIcon from '@assets/tech-icons/typescript.svg';
+import viteIcon from '@assets/tech-icons/vite.svg';
 
 import client_1 from '@/public/images/clients/client-1.webp';
 import client_2 from '@/public/images/clients/client-2.webp';
 import client_3 from '@/public/images/clients/client-3.webp';
 import client_4 from '@/public/images/clients/client-4.webp';
-import AvatarMe from '@/public/images/profile.png';
+import AvatarMe from '@/public/images/mypic.jpeg';
 import project_1 from '@/public/images/projects/project-1.webp';
 import project_2 from '@/public/images/projects/project-2.webp';
 import project_3 from '@/public/images/projects/project-3.webp';
 import project_4 from '@/public/images/projects/project-4.webp';
 
 export {
-  asanaIcon,
   athonLogo,
   athonLogoLight,
   AvatarMe,
@@ -84,6 +89,7 @@ export {
   client_2,
   client_3,
   client_4,
+  databaseIcon,
   discord,
   discordLight,
   dribble,
@@ -93,9 +99,11 @@ export {
   emailIconLight,
   facebook,
   figmaIcon,
+  fiverrIcon,
   flyIcon,
   flyIconLight,
   framerIcon,
+  githubIcon,
   graphicDesignIcon,
   graphicDesignIconLight,
   handGif,
@@ -108,7 +116,7 @@ export {
   locationIcon,
   multiplyIcon,
   multiplyIconLight,
-  notionIcon,
+  nextJsIcon,
   pinterest,
   pixelworksLogo,
   pixelworksLogoLight,
@@ -116,6 +124,7 @@ export {
   project_2,
   project_3,
   project_4,
+  pythonIcon,
   questionMarkIcon,
   questionMarkIconLight,
   rightArrow,
@@ -129,8 +138,11 @@ export {
   stackIconLight,
   starLig,
   starLigLight,
+  tailwindIcon,
   tiktok,
   twitter,
+  typeScriptIcon,
+  viteIcon,
   vortexLogo,
   vortexLogoLight,
   webDesignIcon,

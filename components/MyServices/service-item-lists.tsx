@@ -70,7 +70,9 @@ export default function ServiceItemLists() {
               </div>
               {/* bottom */}
               <div className='relative flex h-auto w-full flex-none shrink-0 flex-col justify-start wrap-break-word whitespace-pre-wrap'>
-                <p className='text-light-gray-2 text-[15px] font-medium'>{service.description}</p>
+                <p className='text-light-gray-2 text-[15px] font-medium'>
+                  {service.description}
+                </p>
               </div>
             </Link>
           </motion.li>

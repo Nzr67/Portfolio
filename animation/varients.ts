@@ -1,4 +1,6 @@
-export const formVariants = {
+import type { Variants } from 'motion/react';
+
+export const formVariants: Variants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
     opacity: 1,
@@ -10,7 +12,7 @@ export const formVariants = {
   },
 };
 
-export const listVariants = {
+export const listVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -22,7 +24,7 @@ export const listVariants = {
   },
 };
 
-export const itemVariants = {
+export const itemVariants: Variants = {
   hidden: { opacity: 0, x: -20 },
   visible: {
     opacity: 1,

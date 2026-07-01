@@ -10,7 +10,6 @@ import Testimonials from '@/components/Testimonials';
 import ScheduleButton from '@/components/ui/ScheduleButton';
 import { myServicesPlans } from '@/data';
 
-import InfoRow from './info-row';
 
 export default function ServicesSection() {
   return (
@@ -49,7 +48,7 @@ export default function ServicesSection() {
                             height={24}
                             darkImage={plan.icon}
                             lightImage={plan.lightIcon}
-                            altText={plan.description}
+                            altText={plan.service}
                             className='h-full w-full object-cover object-center'
                           />
                         </div>
@@ -59,46 +58,20 @@ export default function ServicesSection() {
                         <p className='text-very-light-gray text-[20px] font-bold'>{plan.service}</p>
                       </div>
                     </div>
-
-                    {/* Right Section with Price */}
-                    <div className='flex items-center gap-0'>
-                      <div className='flex flex-col justify-start'>
-                        <p className='text-light-gray-3 text-[18px] font-semibold'>{plan.price}/</p>
-                      </div>
-                      <div className='flex flex-col justify-start'>
-                        <p className='text-light-gray-2 text-[14px] font-medium'>hour</p>
-                      </div>
-                    </div>
                   </div>
 
                   {/* Bottom Section with Description */}
-                  <div className='flex h-auto w-full flex-col whitespace-pre-wrap'>
-                    <p className='text-light-gray-2 text-[15px] font-semibold'>
-                      {plan.description}
-                    </p>
+                  <div className='flex h-auto w-full flex-col'>
+                    <ul className='text-light-gray-2 text-[15px] font-semibold list-disc list-inside flex flex-col gap-1.5 ' >
+                      {plan.description.map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
 
-                <div className='border-dark-gray-3 flex h-auto w-full flex-col gap-2 rounded-xl border py-2'>
-                  <InfoRow
-                    label='Completed Works'
-                    value={plan.completedWorks}
-                  />
-                  <InfoRow
-                    label='Experiences'
-                    value={plan.experience}
-                  />
-                  <InfoRow
-                    label='Total Hours Worked'
-                    value={plan.totalHoursWorked}
-                  />
-                </div>
                 <div className='h-auto w-full'>
-                  <ScheduleButton
-                    label='Schedule Call'
-                    darkIcon={calendarIcon}
-                    lightIcon={calendarIconLight}
-                  />
+                  
                 </div>
               </div>
             </motion.div>

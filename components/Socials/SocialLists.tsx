@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'motion/react';
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -35,8 +36,14 @@ export default function SocialLists() {
                   aria-label={`Visit ${social.title}`}
                   className='bg-very-dark-gray hover:bg-dark-gray-3 border-dark-gray-3 group rounded-xl border p-3 transition-all duration-300'
                 >
-                  <span className='text-light-gray-1 group-hover:text-light-gray-3 text-sm transition-all duration-300'>
-                    {social.icon}
+                  <span className='relative block h-5 w-5 text-light-gray-1 group-hover:text-light-gray-3 text-sm transition-all duration-300'>
+                    <Image
+                      src={social.icon}
+                      alt={social.title}
+                      width={20}
+                      height={20}
+                      className='object-contain'
+                    />
                   </span>
                 </Link>
               </motion.li>

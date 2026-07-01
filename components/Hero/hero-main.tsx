@@ -74,7 +74,7 @@ export default function HeroMain() {
             viewport={{ once: true }}
             className='text-3xl leading-[1.2em] font-bold text-white sm:text-4xl'
           >
-            Pragadesh V
+            Abdul Nazar
           </motion.h1>
         </div>
 
@@ -93,8 +93,11 @@ export default function HeroMain() {
           viewport={{ once: true }}
           className='text-light-gray-2 mb-4 leading-[150%] font-medium sm:text-[18px]'
         >
-          Experienced web developer from Kerala, India, with a passion for crafting seamless digital
-          experiences and a proven track record.
+              I am an Information Technology student at the Institute of Technology, University of Moratuwa (ITUM), driven by a passion for building clean, efficient, and impactful digital experiences. 
+          <br />
+          <br />
+          My journey in technology sits at the intersection of modern frontend development, backend logic, and intelligent automation.
+          Coming from a professional background in administrative operations, I bring a unique perspective to software engineering—combining a sharp eye for user workflows with a structured approach to problem-solving.
         </motion.p>
 
         <motion.div
@@ -114,11 +117,11 @@ export default function HeroMain() {
         >
           <EmailButton handleClick={handleClick} />
 
-          <ScheduleButton
+          {/* <ScheduleButton
             darkIcon={calendarIcon}
             lightIcon={calendarIconLight}
             label='Schedule call'
-          />
+          /> */} 
         </motion.div>
       </div>
     </section>

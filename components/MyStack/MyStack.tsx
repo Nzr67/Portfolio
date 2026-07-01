@@ -17,7 +17,7 @@ export default function MyStack() {
           description='Commitment to staying updated with the latest design trends and techniques.'
         />
       </div>
-
+      
       <StackLists />
     </section>
   );

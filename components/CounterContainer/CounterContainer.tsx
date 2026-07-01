@@ -33,10 +33,11 @@ const CounterListsItem = () => {
           <div className='relative flex h-min flex-1 flex-nowrap items-center justify-center gap-1 overflow-visible p-0'>
             <div className='relative h-auto w-auto flex-none'>
               <div className='font-IBM_Plex_Mono! text-very-light-gray items-start justify-start text-[28px] font-bold'>
-                <CountUp end={list.value} />
+                <CountUp end={parseInt(String(list.value), 10) || 0} 
+                suffix={String(list.value).includes('%') ? '%' : ''}/>
               </div>
             </div>
-            <h1 className='text-[34px] font-bold text-white'>+</h1>
+            <h1 className='text-[34px] font-bold text-white'></h1>
           </div>
           <div className='relative flex w-full flex-none shrink-0 flex-col justify-start wrap-break-word whitespace-pre-wrap'>
             <p className='text-light-gray-2 text-center text-[15px] font-medium'>{list.title}</p>
