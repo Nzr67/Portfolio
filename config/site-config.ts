@@ -1,17 +1,17 @@
 import { env } from '../env.mjs';
 
 export const siteConfig = {
-  title: 'PS Parwez • Developer Portfolio',
-  name: 'PS Parwez',
+  title: 'Abdul Nazar • Developer Portfolio',
+  name: 'Abdul Nazar',
   description:
-    'The personal portfolio of PS Parwez — Front-end developer specializing in building fast, accessible, and visually appealing web experiences with React, Next.js, and modern UI design.',
+    'The personal portfolio of Abdul Nazar — Front-end developer specializing in building fast, accessible, and visually appealing web experiences with React, Next.js, and modern UI design.',
   keywords: [
     // ──────────────── 🧑‍💻 Portfolio & Personal Brand ────────────────
-    'PS Parwez',
-    'PS Parwez Portfolio',
-    'PS Portfolio',
-    'PS Parwez Developer',
-    'PS Parwez Website',
+    'Abdul Nazar',
+    'Abdul Nazar Portfolio',
+    'Portfolio',
+    'Abdul Nazar Developer',
+    'Abdul Nazar Website',
     'Portfolio Website',
     'Personal Portfolio',
     'Developer Portfolio',
@@ -127,7 +127,7 @@ export const siteConfig = {
   twitterHandle: '@psparwez',
   locale: 'en_IN',
   author: {
-    name: 'PS Parwez',
+    name: 'Abdul Nazar',
     url: 'https://dark-portfolio-site.vercel.app/',
     email: process.env.CONTACT_EMAIL,
   },
@@ -136,23 +136,23 @@ export const siteConfig = {
 
   //  <Metadata>
   metadata: {
-    title: 'PS Parwez • Developer Portfolio',
+    title: 'Abdul Nazar • Developer Portfolio',
     description:
-      'Explore the work, projects, and achievements of PS Parwez — front-end developer crafting modern, responsive, and accessible web apps using Next.js and React.',
+      'Explore the work, projects, and achievements of Abdul Nazar — front-end developer crafting modern, responsive, and accessible web apps using Next.js and React.',
     openGraph: {
       type: 'website',
       url: env.SITE_URL,
-      title: 'PS Parwez • Developer Portfolio',
+      title: 'Abdul Nazar • Developer Portfolio',
       description:
-        'Explore the work, projects, and achievements of PS Parwez — front-end developer crafting modern, responsive, and accessible web apps using Next.js and React.',
-      siteName: 'PS Parwez',
+        'Explore the work, projects, and achievements of Abdul Nazar — front-end developer crafting modern, responsive, and accessible web apps using Next.js and React.',
+      siteName: 'Abdul Nazar',
 
       images: [
         {
           url: `${env.SITE_URL}/og-image.png`,
           width: 1200,
           height: 630,
-          alt: 'PS Parwez Portfolio Preview',
+          alt: 'Abdul Nazar Portfolio Preview',
         },
       ],
       locale: 'en_IN',
@@ -161,7 +161,7 @@ export const siteConfig = {
       card: 'summary_large_image',
       site: '@psparwez',
       creator: '@psparwez',
-      title: 'PS Parwez • Developer Portfolio',
+      title: 'Abdul Nazar • Developer Portfolio',
       description:
         'Front-end developer building sleek and performant web experiences with Next.js, React, and Tailwind CSS.',
       images: [`${env.SITE_URL}/og-image.png`],
