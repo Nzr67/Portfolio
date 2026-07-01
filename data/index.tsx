@@ -312,6 +312,14 @@ export const myServices: myServicesTypes[] = [
     lightIcon: graphicDesignIconLight,
     link: '/services',
   },
+  {
+    id: 4,
+    title: 'SEO Optimization',
+    description: 'Boosting online visibility and driving organic traffic to your website.',
+    icon: seoOptIcon,
+    lightIcon: seoOptIconLight,
+    link: '/services',
+  }
 ];
 
 export const myShowCases: myShowCasesTypes[] = [
