@@ -94,9 +94,9 @@ export default function ShowCase({
                         </div>
 
                         <div className='relative flex h-auto w-auto flex-none shrink-0 flex-col whitespace-pre opacity-70 transition-all duration-500 group-hover:opacity-100'>
-                          <p className='text-light-gray-3 text-[15px] leading-[100%] font-medium'>
+{/*                           <p className='text-light-gray-3 text-[15px] leading-[100%] font-medium'>
                             {item.link}
-                          </p>
+                          </p> */}
                         </div>
                       </Link>
                     </div>
