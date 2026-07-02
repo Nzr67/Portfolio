@@ -47,7 +47,7 @@ export default function ShowCase({
             viewport={{
               once: true,
             }}
-            className='relative h-auto w-full flex-none'
+            className='relative h- w-full flex-none'
             key={item.id}
           >
             <div className='bg-very-dark-gray border-dark-gray-3 relative flex h-min w-full flex-col flex-nowrap items-center justify-start gap-5 overflow-visible rounded-xl border p-4 lg:flex-row lg:p-[8px_24px_8px_8px]'>
@@ -74,7 +74,7 @@ export default function ShowCase({
 
                     <div className='relative h-auto flex-none'>
                       <Link
-                        href={'https://' + item.link}
+                        href={''}
                         target='_blank'
                         rel='noopener noreferrer'
                         aria-label={`Visit project website for ${item.title}`}
@@ -103,16 +103,12 @@ export default function ShowCase({
                   </div>
 
                   <div className='border-dark-gray-3 relative flex h-min w-full flex-none flex-nowrap items-center justify-start gap-3 overflow-visible border-y px-0 py-3'>
+                    <div className='bg-medium-gray relative aspect-square h-[5px] w-[5px] flex-none rounded-full'></div>
                     <div className='relative flex h-auto w-auto flex-none shrink-0 flex-col whitespace-pre'>
                       <p className='text-light-gray-2 text-[15px] font-medium'>{item.type}</p>
                     </div>
                     <div className='bg-medium-gray relative aspect-square h-[5px] w-[5px] flex-none rounded-full'></div>
-                    <div className='relative flex h-auto w-auto flex-none shrink-0 flex-col whitespace-pre'>
-                      <p className='text-light-gray-2 text-[15px] font-medium'>
-                        {item.pages} Pages
-                      </p>
-                    </div>
-                    <div className='bg-medium-gray relative aspect-square h-[5px] w-[5px] flex-none rounded-full'></div>
+
                     <div className='relative flex h-auto w-auto flex-none shrink-0 flex-col whitespace-pre'>
                       <p className='text-light-gray-2 text-[15px] font-medium'>
                         {item.theme} Theme

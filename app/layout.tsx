@@ -16,6 +16,7 @@ import { cn } from '@/lib/utils';
 import NextTopLoaderProvider from '@/providers/nexttop-loader-provider';
 import { ThemeProvider } from '@/providers/theme-provider';
 
+
 function getWebSiteJsonLd(): WithContext<WebSite> {
   return {
     '@context': 'https://schema.org',

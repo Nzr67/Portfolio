@@ -325,45 +325,20 @@ export const myServices: myServicesTypes[] = [
 export const myShowCases: myShowCasesTypes[] = [
   {
     id: 1,
-    title: 'Devcraft',
-    description: 'Showcasing expertise, passion, and innovation in the realm of development.',
-    link: 'vortex.com',
-    type: 'Portfolio',
-    theme: 'Dark',
-    pages: 4,
+    title: 'University Dining Report Tool',
+    description: 'A student-focused digital solution conceptualized to streamline feedback and optimize management for university dining facilities. Features structured data tracking and custom role definitions to help campus administrators monitor dining operations and address student utility feedback efficiently.',
+    type: 'Web Application',
+    theme: 'Dark & Light',
     image: project_1,
   },
   {
     id: 2,
-    title: 'Zenith Gym',
-    description: 'Empowering fitness enthusiasts with an immersive online experience.',
-    link: 'zenith.com',
-    type: 'Fitness',
+    title: 'React Task Manager',
+    description: 'A modern task management application built with React and TypeScript.',
+    type: 'Web Application',
     theme: 'Light',
-    pages: 5,
     image: project_2,
-  },
-  {
-    id: 3,
-    title: 'Novus Agency',
-    description: 'Transforming ideas into digital realities with creativity and expertise.',
-    link: 'novus.com',
-    type: 'Business',
-    theme: 'Dark',
-    pages: 6,
-    image: project_3,
-  },
-  {
-    id: 4,
-    title: 'Apex Agency',
-    description:
-      'Setting the pinnacle of digital excellence with cutting-edge solutions and creativity.',
-    link: 'apex.com',
-    type: 'Business',
-    theme: 'Light',
-    pages: 6,
-    image: project_4,
-  },
+  }
 ];
 
 export const testimonials: testimonialsTypes[] = [
