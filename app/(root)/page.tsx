@@ -15,10 +15,10 @@ export default function Home() {
       <MyStack />
       <MyServices />
       <ShowCase
-        showData={2}
-        isMore
+        showData={3}
+        isMore={false}
       />
-      <Testimonials />
+      {/* <Testimonials /> */}
     </div>
   );
 }
