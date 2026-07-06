@@ -1,58 +1,36 @@
-# 👋 Portfolio Portfolio
-A sleek and modern portfolio website built with Next.js, showcasing professional experience and projects in a minimalist, user-friendly design. 💯
+# 👋 Nzr | Portfolio
 
+A sleek, modern, and mobile-responsive portfolio website built with Next.js, showcasing my technical projects, skill stack, and development journey. Optimized for high performance and live cloud deployment on Vercel. 🚀
 
+## 🛠️ Tech Stack
 
-## 📸 Demo Screenshots
-![Image](https://github.com/user-attachments/assets/79250590-04ed-43fa-82ed-4cc64b1a7971)
+- **Framework:** Next.js (React)
+- **Styling:** Tailwind CSS / SCSS
+- **Language:** TypeScript / JavaScript
+- **Deployment:** Vercel
 
+## 📸 Project Showcase
 
-## Getting Started
+The portfolio includes interactive layout grids displaying:
+- **TaskSphere:** A modular, client-side task management application built to handle dynamic user workflows.
+- **Campus Dining System:** A student-focused digital management and reporting tool conceptualized for university facilities.
+- **Data Trackers:** Workflow automation systems built to structure logisitics and asset tracking.
 
-Follow these steps to run the project locally:
+---
+
+## 🚀 Getting Started
+
+Follow these steps to spin up the project locally on your machine:
 
 ### Prerequisites
 
 Make sure you have the following installed:
-
 - [Node.js](https://nodejs.org/) (v18 or later)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- Your preferred package manager (npm or yarn)
 
 ### Installation
 
-1. Clone the repository:
-
+1. Clone your repository down to your local machine:
    ```bash
-   git clone https://github.com/psparwez/portfolio.git
-   cd portfolio
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-
-3. Run the development server:
-
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-   The application will be available at [http://localhost:3000](http://localhost:3000).
-
-### Build for Production
-
-To create an optimized production build, run:
-
-```bash
-npm run build
-npm start
-# or
-yarn build
-yarn start
-```
+   git clone [https://github.com/Nzr67/Portfolio.git](https://github.com/Nzr67/Portfolio.git)
+   cd Portfolio
